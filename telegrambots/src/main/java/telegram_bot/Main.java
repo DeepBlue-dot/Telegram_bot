@@ -28,6 +28,7 @@ class Bot extends TelegramLongPollingBot {
             // Set variables
             String message_text = update.getMessage().getText();
             Long chat_id = update.getMessage().getChatId();
+            System.out.println(message_text);
 
             SendMessage message = SendMessage.builder()
                     .chatId(chat_id.toString()) //Who are we sending a message to
